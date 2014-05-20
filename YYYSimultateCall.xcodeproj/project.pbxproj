@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DF39C32192B5D7500593B14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C31192B5D7500593B14 /* Foundation.framework */; };
+		3DF39C34192B5D7500593B14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C33192B5D7500593B14 /* CoreGraphics.framework */; };
+		3DF39C36192B5D7500593B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C35192B5D7500593B14 /* UIKit.framework */; };
+		3DF39C3C192B5D7600593B14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DF39C3A192B5D7600593B14 /* InfoPlist.strings */; };
+		3DF39C3E192B5D7600593B14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF39C3D192B5D7600593B14 /* main.m */; };
+		3DF39C42192B5D7600593B14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF39C41192B5D7600593B14 /* AppDelegate.m */; };
+		3DF39C44192B5D7600593B14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DF39C43192B5D7600593B14 /* Images.xcassets */; };
+		3DF39C4B192B5D7600593B14 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C4A192B5D7600593B14 /* XCTest.framework */; };
+		3DF39C4C192B5D7600593B14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C31192B5D7500593B14 /* Foundation.framework */; };
+		3DF39C4D192B5D7600593B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C35192B5D7500593B14 /* UIKit.framework */; };
+		3DF39C55192B5D7600593B14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DF39C53192B5D7600593B14 /* InfoPlist.strings */; };
+		3DF39C57192B5D7600593B14 /* YYYSimultateCallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF39C56192B5D7600593B14 /* YYYSimultateCallTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DF39C4E192B5D7600593B14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DF39C26192B5D7500593B14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DF39C2D192B5D7500593B14;
+			remoteInfo = YYYSimultateCall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DF39C2E192B5D7500593B14 /* YYYSimultateCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYYSimultateCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF39C31192B5D7500593B14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DF39C33192B5D7500593B14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3DF39C35192B5D7500593B14 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3DF39C39192B5D7600593B14 /* YYYSimultateCall-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YYYSimultateCall-Info.plist"; sourceTree = "<group>"; };
+		3DF39C3B192B5D7600593B14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DF39C3D192B5D7600593B14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DF39C3F192B5D7600593B14 /* YYYSimultateCall-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YYYSimultateCall-Prefix.pch"; sourceTree = "<group>"; };
+		3DF39C40192B5D7600593B14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DF39C41192B5D7600593B14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DF39C43192B5D7600593B14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3DF39C49192B5D7600593B14 /* YYYSimultateCallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYYSimultateCallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF39C4A192B5D7600593B14 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3DF39C52192B5D7600593B14 /* YYYSimultateCallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YYYSimultateCallTests-Info.plist"; sourceTree = "<group>"; };
+		3DF39C54192B5D7600593B14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DF39C56192B5D7600593B14 /* YYYSimultateCallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYYSimultateCallTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DF39C2B192B5D7500593B14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF39C34192B5D7500593B14 /* CoreGraphics.framework in Frameworks */,
+				3DF39C36192B5D7500593B14 /* UIKit.framework in Frameworks */,
+				3DF39C32192B5D7500593B14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF39C46192B5D7600593B14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF39C4B192B5D7600593B14 /* XCTest.framework in Frameworks */,
+				3DF39C4D192B5D7600593B14 /* UIKit.framework in Frameworks */,
+				3DF39C4C192B5D7600593B14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DF39C25192B5D7500593B14 = {
+			isa = PBXGroup;
+			children = (
+				3DF39C37192B5D7500593B14 /* YYYSimultateCall */,
+				3DF39C50192B5D7600593B14 /* YYYSimultateCallTests */,
+				3DF39C30192B5D7500593B14 /* Frameworks */,
+				3DF39C2F192B5D7500593B14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DF39C2F192B5D7500593B14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DF39C2E192B5D7500593B14 /* YYYSimultateCall.app */,
+				3DF39C49192B5D7600593B14 /* YYYSimultateCallTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DF39C30192B5D7500593B14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DF39C31192B5D7500593B14 /* Foundation.framework */,
+				3DF39C33192B5D7500593B14 /* CoreGraphics.framework */,
+				3DF39C35192B5D7500593B14 /* UIKit.framework */,
+				3DF39C4A192B5D7600593B14 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DF39C37192B5D7500593B14 /* YYYSimultateCall */ = {
+			isa = PBXGroup;
+			children = (
+				3DF39C40192B5D7600593B14 /* AppDelegate.h */,
+				3DF39C41192B5D7600593B14 /* AppDelegate.m */,
+				3DF39C43192B5D7600593B14 /* Images.xcassets */,
+				3DF39C38192B5D7600593B14 /* Supporting Files */,
+			);
+			path = YYYSimultateCall;
+			sourceTree = "<group>";
+		};
+		3DF39C38192B5D7600593B14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DF39C39192B5D7600593B14 /* YYYSimultateCall-Info.plist */,
+				3DF39C3A192B5D7600593B14 /* InfoPlist.strings */,
+				3DF39C3D192B5D7600593B14 /* main.m */,
+				3DF39C3F192B5D7600593B14 /* YYYSimultateCall-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DF39C50192B5D7600593B14 /* YYYSimultateCallTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DF39C56192B5D7600593B14 /* YYYSimultateCallTests.m */,
+				3DF39C51192B5D7600593B14 /* Supporting Files */,
+			);
+			path = YYYSimultateCallTests;
+			sourceTree = "<group>";
+		};
+		3DF39C51192B5D7600593B14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DF39C52192B5D7600593B14 /* YYYSimultateCallTests-Info.plist */,
+				3DF39C53192B5D7600593B14 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DF39C2D192B5D7500593B14 /* YYYSimultateCall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF39C5A192B5D7600593B14 /* Build configuration list for PBXNativeTarget "YYYSimultateCall" */;
+			buildPhases = (
+				3DF39C2A192B5D7500593B14 /* Sources */,
+				3DF39C2B192B5D7500593B14 /* Frameworks */,
+				3DF39C2C192B5D7500593B14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYYSimultateCall;
+			productName = YYYSimultateCall;
+			productReference = 3DF39C2E192B5D7500593B14 /* YYYSimultateCall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DF39C48192B5D7600593B14 /* YYYSimultateCallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF39C5D192B5D7600593B14 /* Build configuration list for PBXNativeTarget "YYYSimultateCallTests" */;
+			buildPhases = (
+				3DF39C45192B5D7600593B14 /* Sources */,
+				3DF39C46192B5D7600593B14 /* Frameworks */,
+				3DF39C47192B5D7600593B14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DF39C4F192B5D7600593B14 /* PBXTargetDependency */,
+			);
+			name = YYYSimultateCallTests;
+			productName = YYYSimultateCallTests;
+			productReference = 3DF39C49192B5D7600593B14 /* YYYSimultateCallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DF39C26192B5D7500593B14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "YYY Team";
+				TargetAttributes = {
+					3DF39C48192B5D7600593B14 = {
+						TestTargetID = 3DF39C2D192B5D7500593B14;
+					};
+				};
+			};
+			buildConfigurationList = 3DF39C29192B5D7500593B14 /* Build configuration list for PBXProject "YYYSimultateCall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3DF39C25192B5D7500593B14;
+			productRefGroup = 3DF39C2F192B5D7500593B14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DF39C2D192B5D7500593B14 /* YYYSimultateCall */,
+				3DF39C48192B5D7600593B14 /* YYYSimultateCallTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DF39C2C192B5D7500593B14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF39C3C192B5D7600593B14 /* InfoPlist.strings in Resources */,
+				3DF39C44192B5D7600593B14 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF39C47192B5D7600593B14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF39C55192B5D7600593B14 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DF39C2A192B5D7500593B14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF39C42192B5D7600593B14 /* AppDelegate.m in Sources */,
+				3DF39C3E192B5D7600593B14 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF39C45192B5D7600593B14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF39C57192B5D7600593B14 /* YYYSimultateCallTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DF39C4F192B5D7600593B14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DF39C2D192B5D7500593B14 /* YYYSimultateCall */;
+			targetProxy = 3DF39C4E192B5D7600593B14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DF39C3A192B5D7600593B14 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DF39C3B192B5D7600593B14 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3DF39C53192B5D7600593B14 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DF39C54192B5D7600593B14 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DF39C58192B5D7600593B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3DF39C59192B5D7600593B14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DF39C5B192B5D7600593B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YYYSimultateCall/YYYSimultateCall-Prefix.pch";
+				INFOPLIST_FILE = "YYYSimultateCall/YYYSimultateCall-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3DF39C5C192B5D7600593B14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YYYSimultateCall/YYYSimultateCall-Prefix.pch";
+				INFOPLIST_FILE = "YYYSimultateCall/YYYSimultateCall-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3DF39C5E192B5D7600593B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YYYSimultateCall.app/YYYSimultateCall";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YYYSimultateCall/YYYSimultateCall-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YYYSimultateCallTests/YYYSimultateCallTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3DF39C5F192B5D7600593B14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YYYSimultateCall.app/YYYSimultateCall";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YYYSimultateCall/YYYSimultateCall-Prefix.pch";
+				INFOPLIST_FILE = "YYYSimultateCallTests/YYYSimultateCallTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DF39C29192B5D7500593B14 /* Build configuration list for PBXProject "YYYSimultateCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF39C58192B5D7600593B14 /* Debug */,
+				3DF39C59192B5D7600593B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DF39C5A192B5D7600593B14 /* Build configuration list for PBXNativeTarget "YYYSimultateCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF39C5B192B5D7600593B14 /* Debug */,
+				3DF39C5C192B5D7600593B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3DF39C5D192B5D7600593B14 /* Build configuration list for PBXNativeTarget "YYYSimultateCallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF39C5E192B5D7600593B14 /* Debug */,
+				3DF39C5F192B5D7600593B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DF39C26192B5D7500593B14 /* Project object */;
+}
