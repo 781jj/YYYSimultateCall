@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DCA1C28192C502400A9382B /* YYCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA1C25192C502400A9382B /* YYCall.m */; };
+		3DCA1C29192C502400A9382B /* YYCallSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA1C27192C502400A9382B /* YYCallSource.m */; };
+		3DCA1C30192C520500A9382B /* YYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA1C2F192C520500A9382B /* YYController.m */; };
+		3DCA1C33192C557A00A9382B /* YYLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA1C32192C557A00A9382B /* YYLocalNotification.m */; };
 		3DF39C32192B5D7500593B14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C31192B5D7500593B14 /* Foundation.framework */; };
 		3DF39C34192B5D7500593B14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C33192B5D7500593B14 /* CoreGraphics.framework */; };
 		3DF39C36192B5D7500593B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C35192B5D7500593B14 /* UIKit.framework */; };
@@ -32,6 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DCA1C24192C502400A9382B /* YYCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCall.h; sourceTree = "<group>"; };
+		3DCA1C25192C502400A9382B /* YYCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCall.m; sourceTree = "<group>"; };
+		3DCA1C26192C502400A9382B /* YYCallSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCallSource.h; sourceTree = "<group>"; };
+		3DCA1C27192C502400A9382B /* YYCallSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCallSource.m; sourceTree = "<group>"; };
+		3DCA1C2E192C520500A9382B /* YYController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YYController.h; path = Controller/YYController.h; sourceTree = "<group>"; };
+		3DCA1C2F192C520500A9382B /* YYController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YYController.m; path = Controller/YYController.m; sourceTree = "<group>"; };
+		3DCA1C31192C557A00A9382B /* YYLocalNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYLocalNotification.h; sourceTree = "<group>"; };
+		3DCA1C32192C557A00A9382B /* YYLocalNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYLocalNotification.m; sourceTree = "<group>"; };
 		3DF39C2E192B5D7500593B14 /* YYYSimultateCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYYSimultateCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF39C31192B5D7500593B14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3DF39C33192B5D7500593B14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +86,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DCA1C1B192C432200A9382B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3DCA1C23192C502400A9382B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3DCA1C24192C502400A9382B /* YYCall.h */,
+				3DCA1C25192C502400A9382B /* YYCall.m */,
+				3DCA1C26192C502400A9382B /* YYCallSource.h */,
+				3DCA1C27192C502400A9382B /* YYCallSource.m */,
+				3DCA1C31192C557A00A9382B /* YYLocalNotification.h */,
+				3DCA1C32192C557A00A9382B /* YYLocalNotification.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3DCA1C2D192C51D700A9382B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3DCA1C2E192C520500A9382B /* YYController.h */,
+				3DCA1C2F192C520500A9382B /* YYController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		3DF39C25192B5D7500593B14 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +148,9 @@
 		3DF39C37192B5D7500593B14 /* YYYSimultateCall */ = {
 			isa = PBXGroup;
 			children = (
+				3DCA1C2D192C51D700A9382B /* Controller */,
+				3DCA1C23192C502400A9382B /* Source */,
+				3DCA1C1B192C432200A9382B /* Model */,
 				3DF39C40192B5D7600593B14 /* AppDelegate.h */,
 				3DF39C41192B5D7600593B14 /* AppDelegate.m */,
 				3DF39C43192B5D7600593B14 /* Images.xcassets */,
@@ -241,6 +285,10 @@
 			files = (
 				3DF39C42192B5D7600593B14 /* AppDelegate.m in Sources */,
 				3DF39C3E192B5D7600593B14 /* main.m in Sources */,
+				3DCA1C28192C502400A9382B /* YYCall.m in Sources */,
+				3DCA1C29192C502400A9382B /* YYCallSource.m in Sources */,
+				3DCA1C33192C557A00A9382B /* YYLocalNotification.m in Sources */,
+				3DCA1C30192C520500A9382B /* YYController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +485,7 @@
 				3DF39C5C192B5D7600593B14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DF39C5D192B5D7600593B14 /* Build configuration list for PBXNativeTarget "YYYSimultateCallTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +494,7 @@
 				3DF39C5F192B5D7600593B14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
