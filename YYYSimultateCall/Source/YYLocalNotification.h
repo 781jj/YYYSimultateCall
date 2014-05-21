@@ -10,5 +10,7 @@
 @class YYCall;
 @interface YYLocalNotification : NSObject
 - (id)initWithCall:(YYCall *)call;
-
+- (void)start;
+- (void)stop;
+- (void)update:(YYCall *)call;
 @end

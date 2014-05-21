@@ -9,14 +9,15 @@
 #import <Foundation/Foundation.h>
 
 typedef enum {
-    YYThreeMinuteRepeat = 0,
-    YYFiveMinuteRepeat = 1,
-    YYTenMinuteRepeat = 2,
-    YYQuarterHourRepeat = 3,
-    YYHalfHourRepeat = 4,
-    YYThreeQuartersHourRepeat = 5,
-    YYHourRepeat = 6,
-    YYTwoHoursRepeat = 7,
+    YYNoRepeat = 0,
+    YYThreeMinuteRepeat = 3,
+    YYFiveMinuteRepeat = 5,
+    YYTenMinuteRepeat = 10,
+    YYQuarterHourRepeat = 15,
+    YYHalfHourRepeat = 30,
+    YYThreeQuartersHourRepeat = 45,
+    YYHourRepeat = 60,
+    YYTwoHoursRepeat = 120,
 }YYCallRepeatType;
 
 @interface YYCall : NSObject
@@ -29,7 +30,7 @@ typedef enum {
 @property (nonatomic,strong)NSString *ringSound;
 
 //repeatIntrval 单位分钟,为0表示不重复
-@property (nonatomic,assign)YYCallRepeatType repeatIntrvalMinute;
+@property (nonatomic,assign)YYCallRepeatType repeatType;
 @property (nonatomic,assign)BOOL isOpen;
 
 

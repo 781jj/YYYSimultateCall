@@ -37,7 +37,7 @@
     [aCoder encodeObject:self.callName forKey:@"callName"];
     [aCoder encodeObject:self.callSound forKey:@"callSound"];
     [aCoder encodeObject:self.ringSound forKey:@"ringSound"];
-    [aCoder encodeInt:self.repeatIntrvalMinute forKey:@"repeatIntrvalMinute"];
+    [aCoder encodeInt:self.repeatType forKey:@"repeatIntrvalMinute"];
     [aCoder encodeBool:self.isOpen forKey:@"isOpen"];
 }
 
@@ -46,7 +46,7 @@
     if (self = [super init]) {
         self.callId = [aDecoder decodeIntegerForKey:@"callId"];
         self.timestamp = [aDecoder decodeIntegerForKey:@"timestamp"];
-        self.repeatIntrvalMinute = [aDecoder decodeIntegerForKey:@"repeatIntrvalMinute"];
+        self.repeatType = [aDecoder decodeIntegerForKey:@"repeatIntrvalMinute"];
         self.isOpen = [aDecoder decodeBoolForKey:@"isOpen"];
         self.callName = [aDecoder decodeObjectForKey:@"callName"];
         self.callSound = [aDecoder decodeObjectForKey:@"callSound"];

@@ -11,6 +11,7 @@
 		3DCA1C29192C502400A9382B /* YYCallSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA1C27192C502400A9382B /* YYCallSource.m */; };
 		3DCA1C30192C520500A9382B /* YYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA1C2F192C520500A9382B /* YYController.m */; };
 		3DCA1C33192C557A00A9382B /* YYLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA1C32192C557A00A9382B /* YYLocalNotification.m */; };
+		3DCA1C36192C7EA800A9382B /* locationDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA1C35192C7EA800A9382B /* locationDefault.png */; };
 		3DF39C32192B5D7500593B14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C31192B5D7500593B14 /* Foundation.framework */; };
 		3DF39C34192B5D7500593B14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C33192B5D7500593B14 /* CoreGraphics.framework */; };
 		3DF39C36192B5D7500593B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C35192B5D7500593B14 /* UIKit.framework */; };
@@ -44,6 +45,7 @@
 		3DCA1C2F192C520500A9382B /* YYController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YYController.m; path = Controller/YYController.m; sourceTree = "<group>"; };
 		3DCA1C31192C557A00A9382B /* YYLocalNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYLocalNotification.h; sourceTree = "<group>"; };
 		3DCA1C32192C557A00A9382B /* YYLocalNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYLocalNotification.m; sourceTree = "<group>"; };
+		3DCA1C35192C7EA800A9382B /* locationDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationDefault.png; sourceTree = "<group>"; };
 		3DF39C2E192B5D7500593B14 /* YYYSimultateCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYYSimultateCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF39C31192B5D7500593B14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3DF39C33192B5D7500593B14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,9 +117,18 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		3DCA1C34192C7EA800A9382B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3DCA1C35192C7EA800A9382B /* locationDefault.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		3DF39C25192B5D7500593B14 = {
 			isa = PBXGroup;
 			children = (
+				3DCA1C34192C7EA800A9382B /* Resource */,
 				3DF39C37192B5D7500593B14 /* YYYSimultateCall */,
 				3DF39C50192B5D7600593B14 /* YYYSimultateCallTests */,
 				3DF39C30192B5D7500593B14 /* Frameworks */,
@@ -263,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DCA1C36192C7EA800A9382B /* locationDefault.png in Resources */,
 				3DF39C3C192B5D7600593B14 /* InfoPlist.strings in Resources */,
 				3DF39C44192B5D7600593B14 /* Images.xcassets in Resources */,
 			);

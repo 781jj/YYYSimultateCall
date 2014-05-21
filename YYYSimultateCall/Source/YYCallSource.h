@@ -15,4 +15,5 @@
 - (BOOL)deleteCall:(YYCall *)call;
 - (BOOL)updateCall:(YYCall *)call;
 - (NSArray *)list;
+- (YYCall *)callOfId:(NSInteger )callId;
 @end

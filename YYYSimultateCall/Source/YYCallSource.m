@@ -7,7 +7,7 @@
 //
 
 #import "YYCallSource.h"
-
+#import "YYCall.h"
 #define CALL_CACHE_DIR [[[NSHomeDirectory() stringByAppendingPathComponent:@"Library"] stringByAppendingPathComponent:@"Caches"]stringByAppendingPathComponent:@"Call"]
 #define CALL_FILE_PATH [CALL_CACHE_DIR stringByAppendingPathComponent:@"call"]
 
@@ -96,5 +96,20 @@ static YYCallSource *instance = nil;
     NSData *writeData = [NSKeyedArchiver archivedDataWithRootObject:array];
     [writeData writeToFile:CALL_FILE_PATH atomically:YES];
     return YES;
+}
+
+- (YYCall *)callOfId:(NSInteger )callId
+{
+    NSArray *list = [self list];
+    if (!list) {
+        return nil;
+    }
+    
+    for (YYCall *call in list) {
+        if (call.callId == callId) {
+            return call;
+        }
+    }
+    return nil;
 }
 @end
