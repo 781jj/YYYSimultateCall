@@ -33,6 +33,8 @@ typedef enum {
 @property (nonatomic,assign)YYCallRepeatType repeatType;
 @property (nonatomic,assign)BOOL isOpen;
 
+@property (nonatomic,readonly)NSString *repeatText;
+
 
 
 

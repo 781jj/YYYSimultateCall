@@ -11,7 +11,11 @@
 		3DCA1C29192C502400A9382B /* YYCallSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA1C27192C502400A9382B /* YYCallSource.m */; };
 		3DCA1C30192C520500A9382B /* YYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA1C2F192C520500A9382B /* YYController.m */; };
 		3DCA1C33192C557A00A9382B /* YYLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA1C32192C557A00A9382B /* YYLocalNotification.m */; };
-		3DCA1C36192C7EA800A9382B /* locationDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA1C35192C7EA800A9382B /* locationDefault.png */; };
+		3DD5D2EE192D9AB50080CFE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5D2ED192D9AB50080CFE9 /* Main.storyboard */; };
+		3DD5D2FA192D9E8F0080CFE9 /* YYCallListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5D2F9192D9E8F0080CFE9 /* YYCallListTableViewController.m */; };
+		3DD5D308192DADDA0080CFE9 /* YYCallDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5D307192DADDA0080CFE9 /* YYCallDetailViewController.m */; };
+		3DD5D31F192DEE890080CFE9 /* locationDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5D315192DEE890080CFE9 /* locationDefault.png */; };
+		3DD5D33C192E0FD00080CFE9 /* 1.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5D33B192E0FD00080CFE9 /* 1.m4r */; };
 		3DF39C32192B5D7500593B14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C31192B5D7500593B14 /* Foundation.framework */; };
 		3DF39C34192B5D7500593B14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C33192B5D7500593B14 /* CoreGraphics.framework */; };
 		3DF39C36192B5D7500593B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C35192B5D7500593B14 /* UIKit.framework */; };
@@ -45,7 +49,13 @@
 		3DCA1C2F192C520500A9382B /* YYController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YYController.m; path = Controller/YYController.m; sourceTree = "<group>"; };
 		3DCA1C31192C557A00A9382B /* YYLocalNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYLocalNotification.h; sourceTree = "<group>"; };
 		3DCA1C32192C557A00A9382B /* YYLocalNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYLocalNotification.m; sourceTree = "<group>"; };
-		3DCA1C35192C7EA800A9382B /* locationDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationDefault.png; sourceTree = "<group>"; };
+		3DD5D2ED192D9AB50080CFE9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3DD5D2F8192D9E8F0080CFE9 /* YYCallListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCallListTableViewController.h; sourceTree = "<group>"; };
+		3DD5D2F9192D9E8F0080CFE9 /* YYCallListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCallListTableViewController.m; sourceTree = "<group>"; };
+		3DD5D306192DADDA0080CFE9 /* YYCallDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCallDetailViewController.h; sourceTree = "<group>"; };
+		3DD5D307192DADDA0080CFE9 /* YYCallDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCallDetailViewController.m; sourceTree = "<group>"; };
+		3DD5D315192DEE890080CFE9 /* locationDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationDefault.png; sourceTree = "<group>"; };
+		3DD5D33B192E0FD00080CFE9 /* 1.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.m4r; sourceTree = "<group>"; };
 		3DF39C2E192B5D7500593B14 /* YYYSimultateCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYYSimultateCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF39C31192B5D7500593B14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3DF39C33192B5D7500593B14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,18 +127,54 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		3DCA1C34192C7EA800A9382B /* Resource */ = {
+		3DD5D2F3192D9B450080CFE9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3DCA1C35192C7EA800A9382B /* locationDefault.png */,
+				3DD5D2F8192D9E8F0080CFE9 /* YYCallListTableViewController.h */,
+				3DD5D2F9192D9E8F0080CFE9 /* YYCallListTableViewController.m */,
+				3DD5D306192DADDA0080CFE9 /* YYCallDetailViewController.h */,
+				3DD5D307192DADDA0080CFE9 /* YYCallDetailViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DD5D313192DEE890080CFE9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5D32B192E02890080CFE9 /* Ring */,
+				3DD5D328192DF1650080CFE9 /* Sound */,
+				3DD5D314192DEE890080CFE9 /* Image */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		3DD5D314192DEE890080CFE9 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5D315192DEE890080CFE9 /* locationDefault.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		3DD5D328192DF1650080CFE9 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		3DD5D32B192E02890080CFE9 /* Ring */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5D33B192E0FD00080CFE9 /* 1.m4r */,
+			);
+			path = Ring;
 			sourceTree = "<group>";
 		};
 		3DF39C25192B5D7500593B14 = {
 			isa = PBXGroup;
 			children = (
-				3DCA1C34192C7EA800A9382B /* Resource */,
+				3DD5D313192DEE890080CFE9 /* Resource */,
 				3DF39C37192B5D7500593B14 /* YYYSimultateCall */,
 				3DF39C50192B5D7600593B14 /* YYYSimultateCallTests */,
 				3DF39C30192B5D7500593B14 /* Frameworks */,
@@ -159,11 +205,13 @@
 		3DF39C37192B5D7500593B14 /* YYYSimultateCall */ = {
 			isa = PBXGroup;
 			children = (
+				3DD5D2F3192D9B450080CFE9 /* View */,
 				3DCA1C2D192C51D700A9382B /* Controller */,
 				3DCA1C23192C502400A9382B /* Source */,
 				3DCA1C1B192C432200A9382B /* Model */,
 				3DF39C40192B5D7600593B14 /* AppDelegate.h */,
 				3DF39C41192B5D7600593B14 /* AppDelegate.m */,
+				3DD5D2ED192D9AB50080CFE9 /* Main.storyboard */,
 				3DF39C43192B5D7600593B14 /* Images.xcassets */,
 				3DF39C38192B5D7600593B14 /* Supporting Files */,
 			);
@@ -274,9 +322,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DCA1C36192C7EA800A9382B /* locationDefault.png in Resources */,
+				3DD5D33C192E0FD00080CFE9 /* 1.m4r in Resources */,
+				3DD5D31F192DEE890080CFE9 /* locationDefault.png in Resources */,
 				3DF39C3C192B5D7600593B14 /* InfoPlist.strings in Resources */,
 				3DF39C44192B5D7600593B14 /* Images.xcassets in Resources */,
+				3DD5D2EE192D9AB50080CFE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,12 +345,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD5D2FA192D9E8F0080CFE9 /* YYCallListTableViewController.m in Sources */,
 				3DF39C42192B5D7600593B14 /* AppDelegate.m in Sources */,
 				3DF39C3E192B5D7600593B14 /* main.m in Sources */,
 				3DCA1C28192C502400A9382B /* YYCall.m in Sources */,
 				3DCA1C29192C502400A9382B /* YYCallSource.m in Sources */,
 				3DCA1C33192C557A00A9382B /* YYLocalNotification.m in Sources */,
 				3DCA1C30192C520500A9382B /* YYController.m in Sources */,
+				3DD5D308192DADDA0080CFE9 /* YYCallDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 @class YYCall;
 @interface YYLocalNotification : NSObject
++ (YYLocalNotification *)localNotificationWithCall:(YYCall *)call;
 - (id)initWithCall:(YYCall *)call;
 - (void)start;
 - (void)stop;
