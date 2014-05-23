@@ -12,6 +12,7 @@
 @class YYCall;
 @interface YYController : NSObject
 + (YYController *)shareInstance;
+- (void)back:(BOOL)animation;
 - (void)addCall:(YYCall *)call;
 - (void)deleteCall:(YYCall *)call;
 - (void)openCall:(YYCall *)call;

@@ -10,6 +10,7 @@
 #import "YYCall.h"
 #import "YYCallSource.h"
 #import "YYLocalNotification.h"
+#import "VSViewControllerHolder.h"
 static YYController *instance = nil;
 
 @implementation YYController
@@ -24,12 +25,20 @@ static YYController *instance = nil;
     return instance;
 }
 
+- (void)back:(BOOL)animation
+{
+    [[VSViewControllerHolder shareInstance] goBackanimated:animation];
+
+}
+
 - (void)addCall:(YYCall *)call
 {
+
+   
     [[YYCallSource shareInstance] insertCall:call];
-    [YYLocalNotification localNotificationWithCall:call];
     [[YYLocalNotification localNotificationWithCall:call] start];
     [self notificationChage];
+    [[VSViewControllerHolder shareInstance] goBackanimated:YES];
 }
 
 - (void)deleteCall:(YYCall *)call
@@ -67,11 +76,7 @@ static YYController *instance = nil;
 - (void)notificationChage
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:YYCallListChange object:nil];
-    NSArray *localArr = [[UIApplication sharedApplication] scheduledLocalNotifications];
-    for (UILocalNotification *noti in localArr) {
-        NSLog(@"localArr:%@",noti);
 
-    }
 
 }
 @end

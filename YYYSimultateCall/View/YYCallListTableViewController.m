@@ -12,6 +12,7 @@
 #import "YYController.h"
 @interface YYCallListTableViewController ()
 
+@property (nonatomic,strong)IBOutlet UIBarButtonItem *rightItem;
 - (IBAction)editList:(id)sender;
 @end
 
@@ -29,43 +30,23 @@
     [super viewDidLoad];
     self.clearsSelectionOnViewWillAppear = YES;
 
-    
-   
-    // Uncomment the following line to preserve selection between presentations.
-    
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (IBAction)editList:(id)sender
 {
-    UILocalNotification *notification = [[UILocalNotification alloc] init];
-    //设置10秒之后
-    NSDate *pushDate = [NSDate dateWithTimeIntervalSinceNow:4];
-    if (notification != nil) {
-        // 设置推送时间
-        notification.fireDate = pushDate;
-        // 设置时区
-        notification.timeZone = [NSTimeZone defaultTimeZone];
-        // 设置重复间隔
-        notification.repeatInterval = 0;
-        // 推送声音
-        notification.soundName = @"1.m4r";
-        // 推送内容
-        notification.alertBody = @"推送内容";
-        
-        //显示在icon上的红色圈中的数子
-        notification.applicationIconBadgeNumber = 1;
-        //设置userinfo 方便在之后需要撤销的时候使用
-        NSDictionary *info = [NSDictionary dictionaryWithObject:@"name"forKey:@"key"];
-        notification.userInfo = info;
-        //添加推送到UIApplication
-        UIApplication *app = [UIApplication sharedApplication];
-        [app scheduleLocalNotification:notification];
-        
+    [self.tableView setEditing:!self.tableView.editing animated:YES];
+    
+    if(self.tableView.editing)
+    {
+        [_rightItem setTitle:@"Done"];
+    }
+    else
+    {
+        [_rightItem setTitle:@"Edit"];
     }
 }
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -112,7 +93,7 @@
     YYCall *call =  (YYCall *)[list objectAtIndex:index];
     
     UILabel *timeLabel = (UILabel *)[cell viewWithTag:10];
-    timeLabel.text = [NSString stringWithFormat:@"%d之后",(int)(call.timestamp/60)];
+    timeLabel.text = [NSString stringWithFormat:@"%d分钟之后",(int)(call.timestamp/60)];
     
     UILabel *caller = (UILabel *)[cell viewWithTag:11];
     caller.text = call.callName;
@@ -131,6 +112,42 @@
 
     return cell;
 }
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    return @"删除";
+    
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+  //[self.dataArray removeObjectAtIndex:indexPath.row];
+ 
+   // [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+  
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSArray *list = [[YYCallSource shareInstance] list];
+    NSInteger index = indexPath.row;
+    if (index>= [list count]) {
+        return;
+    }
+    YYCall *call =  (YYCall *)[list objectAtIndex:index];
+
+    [self performSegueWithIdentifier:@"detailCall" sender:call];
+}
+
+
 
 
 /*

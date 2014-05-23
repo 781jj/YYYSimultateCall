@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
+#import "VSViewControllerHolder.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
+        [VSViewControllerHolder shareInstance];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

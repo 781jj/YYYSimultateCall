@@ -18,6 +18,7 @@
 - (id)initWithCall:(YYCall *)call{
     self = [super init];
     if (self) {
+
         self.call = call;
         self.repeatList = [NSMutableArray array];
         if (call.repeatType == 0) {
@@ -27,7 +28,7 @@
             for (int i = 0; i<5; i++) {
                 int minutes = (int )call.repeatType;
                 UILocalNotification *localNoti = [self creatLocationNotification:call interval:minutes*60];
-               [_repeatList addObject:localNoti];
+                [_repeatList addObject:localNoti];
             }
         }
 
@@ -43,57 +44,28 @@
 
 - (UILocalNotification *)creatLocationNotification:(YYCall *)call interval:(int)interval
 {
- /*
     UILocalNotification *localNotification = [[UILocalNotification alloc] init];
-    NSDate *pushData = [NSDate dateWithTimeIntervalSinceNow:4];
-    localNotification.fireDate = pushData;
+    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:10];
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
     localNotification.repeatInterval = 0;
-    localNotification.soundName = call.ringSound;
+    localNotification.soundName = [NSString stringWithFormat:@"%@.m4r",call.ringSound];
     localNotification.alertBody = [NSString stringWithFormat:@"%@ %@",call.callName,call.callSound];
     localNotification.alertAction = @"OK";
+    localNotification.hasAction = YES;
     localNotification.alertLaunchImage = @"locationDefault.png";
-    localNotification.userInfo = @{@"id": [NSString stringWithFormat:@"%d",call.callId]};
+    localNotification.userInfo = @{@"id": [NSString stringWithFormat:@"%ld",call.callId]};
+    localNotification.applicationIconBadgeNumber = 1;
+
     
-    localNotification.applicationIconBadgeNumber = 0;
-*/
-    NSArray *localArr = [[UIApplication sharedApplication] scheduledLocalNotifications];
-    for (UILocalNotification *cancleNoti in localArr ) {
-        [[UIApplication sharedApplication] cancelLocalNotification:cancleNoti];
-    }
-    UILocalNotification *notification = [[UILocalNotification alloc] init];
-    //设置10秒之后
-    NSDate *pushDate = [NSDate dateWithTimeIntervalSinceNow:4];
-    if (notification != nil) {
-        // 设置推送时间
-        notification.fireDate = pushDate;
-        // 设置时区
-        notification.timeZone = [NSTimeZone defaultTimeZone];
-        // 设置重复间隔
-        notification.repeatInterval = 0;
-        // 推送声音
-        notification.soundName = @"1.m4r";
-        // 推送内容
-        notification.alertBody = @"推送内容";
-        
-        //显示在icon上的红色圈中的数子
-        notification.applicationIconBadgeNumber = 1;
-        //设置userinfo 方便在之后需要撤销的时候使用
-        NSDictionary *info = [NSDictionary dictionaryWithObject:@"name"forKey:@"key"];
-        notification.userInfo = info;
-        //添加推送到UIApplication
-        UIApplication *app = [UIApplication sharedApplication];
-        [app scheduleLocalNotification:notification];
-        
-    }
-    return notification;
+   
+    return localNotification;
 }
 
 - (void)start
 {
-   // [self stop];
+    [self stop];
     for (UILocalNotification *localNotification in _repeatList) {
-       // [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+        [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     }
 }
 
@@ -138,9 +110,5 @@
     }
 }
 
-- (void)dealloc
-{
-    [self stop];
-}
 
 @end

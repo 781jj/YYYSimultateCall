@@ -15,7 +15,20 @@
 		3DD5D2FA192D9E8F0080CFE9 /* YYCallListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5D2F9192D9E8F0080CFE9 /* YYCallListTableViewController.m */; };
 		3DD5D308192DADDA0080CFE9 /* YYCallDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5D307192DADDA0080CFE9 /* YYCallDetailViewController.m */; };
 		3DD5D31F192DEE890080CFE9 /* locationDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5D315192DEE890080CFE9 /* locationDefault.png */; };
-		3DD5D33C192E0FD00080CFE9 /* 1.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5D33B192E0FD00080CFE9 /* 1.m4r */; };
+		3DD5D38E192EF9130080CFE9 /* duola.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5D389192EF9130080CFE9 /* duola.m4r */; };
+		3DD5D38F192EF9130080CFE9 /* luck.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5D38A192EF9130080CFE9 /* luck.m4r */; };
+		3DD5D390192EF9130080CFE9 /* nohappiness.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5D38B192EF9130080CFE9 /* nohappiness.m4r */; };
+		3DD5D391192EF9130080CFE9 /* opening.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5D38C192EF9130080CFE9 /* opening.m4r */; };
+		3DD5D392192EF9130080CFE9 /* seaside.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5D38D192EF9130080CFE9 /* seaside.m4r */; };
+		3DD5D3A0192F2D370080CFE9 /* VSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5D399192F2D370080CFE9 /* VSNavigationController.m */; };
+		3DD5D3A1192F2D370080CFE9 /* VSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5D39B192F2D370080CFE9 /* VSViewController.m */; };
+		3DD5D3A2192F2D370080CFE9 /* VSViewControllerHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5D39D192F2D370080CFE9 /* VSViewControllerHolder.m */; };
+		3DD5D3A3192F2D370080CFE9 /* VSWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5D39F192F2D370080CFE9 /* VSWindow.m */; };
+		3DD5D3A6192F31810080CFE9 /* YYCallRepeatListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5D3A5192F31810080CFE9 /* YYCallRepeatListTableViewController.m */; };
+		3DD5D3A9192F37650080CFE9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD5D3A7192F37650080CFE9 /* AddressBook.framework */; };
+		3DD5D3AA192F37650080CFE9 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD5D3A8192F37650080CFE9 /* AddressBookUI.framework */; };
+		3DD5D3AD192F3B260080CFE9 /* YYContactListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5D3AC192F3B260080CFE9 /* YYContactListTableViewController.m */; };
+		3DD5D3B0192F506D0080CFE9 /* YYRingListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5D3AF192F506D0080CFE9 /* YYRingListTableViewController.m */; };
 		3DF39C32192B5D7500593B14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C31192B5D7500593B14 /* Foundation.framework */; };
 		3DF39C34192B5D7500593B14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C33192B5D7500593B14 /* CoreGraphics.framework */; };
 		3DF39C36192B5D7500593B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF39C35192B5D7500593B14 /* UIKit.framework */; };
@@ -55,7 +68,27 @@
 		3DD5D306192DADDA0080CFE9 /* YYCallDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCallDetailViewController.h; sourceTree = "<group>"; };
 		3DD5D307192DADDA0080CFE9 /* YYCallDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCallDetailViewController.m; sourceTree = "<group>"; };
 		3DD5D315192DEE890080CFE9 /* locationDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationDefault.png; sourceTree = "<group>"; };
-		3DD5D33B192E0FD00080CFE9 /* 1.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.m4r; sourceTree = "<group>"; };
+		3DD5D389192EF9130080CFE9 /* duola.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = duola.m4r; sourceTree = "<group>"; };
+		3DD5D38A192EF9130080CFE9 /* luck.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = luck.m4r; sourceTree = "<group>"; };
+		3DD5D38B192EF9130080CFE9 /* nohappiness.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = nohappiness.m4r; sourceTree = "<group>"; };
+		3DD5D38C192EF9130080CFE9 /* opening.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = opening.m4r; sourceTree = "<group>"; };
+		3DD5D38D192EF9130080CFE9 /* seaside.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = seaside.m4r; sourceTree = "<group>"; };
+		3DD5D398192F2D370080CFE9 /* VSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSNavigationController.h; sourceTree = "<group>"; };
+		3DD5D399192F2D370080CFE9 /* VSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSNavigationController.m; sourceTree = "<group>"; };
+		3DD5D39A192F2D370080CFE9 /* VSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSViewController.h; sourceTree = "<group>"; };
+		3DD5D39B192F2D370080CFE9 /* VSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSViewController.m; sourceTree = "<group>"; };
+		3DD5D39C192F2D370080CFE9 /* VSViewControllerHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSViewControllerHolder.h; sourceTree = "<group>"; };
+		3DD5D39D192F2D370080CFE9 /* VSViewControllerHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSViewControllerHolder.m; sourceTree = "<group>"; };
+		3DD5D39E192F2D370080CFE9 /* VSWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSWindow.h; sourceTree = "<group>"; };
+		3DD5D39F192F2D370080CFE9 /* VSWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSWindow.m; sourceTree = "<group>"; };
+		3DD5D3A4192F31810080CFE9 /* YYCallRepeatListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCallRepeatListTableViewController.h; sourceTree = "<group>"; };
+		3DD5D3A5192F31810080CFE9 /* YYCallRepeatListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCallRepeatListTableViewController.m; sourceTree = "<group>"; };
+		3DD5D3A7192F37650080CFE9 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		3DD5D3A8192F37650080CFE9 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		3DD5D3AB192F3B260080CFE9 /* YYContactListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYContactListTableViewController.h; sourceTree = "<group>"; };
+		3DD5D3AC192F3B260080CFE9 /* YYContactListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYContactListTableViewController.m; sourceTree = "<group>"; };
+		3DD5D3AE192F506D0080CFE9 /* YYRingListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRingListTableViewController.h; sourceTree = "<group>"; };
+		3DD5D3AF192F506D0080CFE9 /* YYRingListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRingListTableViewController.m; sourceTree = "<group>"; };
 		3DF39C2E192B5D7500593B14 /* YYYSimultateCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYYSimultateCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF39C31192B5D7500593B14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3DF39C33192B5D7500593B14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD5D3A9192F37650080CFE9 /* AddressBook.framework in Frameworks */,
+				3DD5D3AA192F37650080CFE9 /* AddressBookUI.framework in Frameworks */,
 				3DF39C34192B5D7500593B14 /* CoreGraphics.framework in Frameworks */,
 				3DF39C36192B5D7500593B14 /* UIKit.framework in Frameworks */,
 				3DF39C32192B5D7500593B14 /* Foundation.framework in Frameworks */,
@@ -134,6 +169,12 @@
 				3DD5D2F9192D9E8F0080CFE9 /* YYCallListTableViewController.m */,
 				3DD5D306192DADDA0080CFE9 /* YYCallDetailViewController.h */,
 				3DD5D307192DADDA0080CFE9 /* YYCallDetailViewController.m */,
+				3DD5D3A4192F31810080CFE9 /* YYCallRepeatListTableViewController.h */,
+				3DD5D3A5192F31810080CFE9 /* YYCallRepeatListTableViewController.m */,
+				3DD5D3AB192F3B260080CFE9 /* YYContactListTableViewController.h */,
+				3DD5D3AC192F3B260080CFE9 /* YYContactListTableViewController.m */,
+				3DD5D3AE192F506D0080CFE9 /* YYRingListTableViewController.h */,
+				3DD5D3AF192F506D0080CFE9 /* YYRingListTableViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,16 +207,37 @@
 		3DD5D32B192E02890080CFE9 /* Ring */ = {
 			isa = PBXGroup;
 			children = (
-				3DD5D33B192E0FD00080CFE9 /* 1.m4r */,
+				3DD5D389192EF9130080CFE9 /* duola.m4r */,
+				3DD5D38A192EF9130080CFE9 /* luck.m4r */,
+				3DD5D38B192EF9130080CFE9 /* nohappiness.m4r */,
+				3DD5D38C192EF9130080CFE9 /* opening.m4r */,
+				3DD5D38D192EF9130080CFE9 /* seaside.m4r */,
 			);
 			path = Ring;
+			sourceTree = "<group>";
+		};
+		3DD5D397192F2D370080CFE9 /* VCM */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5D398192F2D370080CFE9 /* VSNavigationController.h */,
+				3DD5D399192F2D370080CFE9 /* VSNavigationController.m */,
+				3DD5D39A192F2D370080CFE9 /* VSViewController.h */,
+				3DD5D39B192F2D370080CFE9 /* VSViewController.m */,
+				3DD5D39C192F2D370080CFE9 /* VSViewControllerHolder.h */,
+				3DD5D39D192F2D370080CFE9 /* VSViewControllerHolder.m */,
+				3DD5D39E192F2D370080CFE9 /* VSWindow.h */,
+				3DD5D39F192F2D370080CFE9 /* VSWindow.m */,
+			);
+			name = VCM;
+			path = YYYSimultateCall/VCM;
 			sourceTree = "<group>";
 		};
 		3DF39C25192B5D7500593B14 = {
 			isa = PBXGroup;
 			children = (
-				3DD5D313192DEE890080CFE9 /* Resource */,
+				3DD5D397192F2D370080CFE9 /* VCM */,
 				3DF39C37192B5D7500593B14 /* YYYSimultateCall */,
+				3DD5D313192DEE890080CFE9 /* Resource */,
 				3DF39C50192B5D7600593B14 /* YYYSimultateCallTests */,
 				3DF39C30192B5D7500593B14 /* Frameworks */,
 				3DF39C2F192B5D7500593B14 /* Products */,
@@ -194,6 +256,8 @@
 		3DF39C30192B5D7500593B14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DD5D3A7192F37650080CFE9 /* AddressBook.framework */,
+				3DD5D3A8192F37650080CFE9 /* AddressBookUI.framework */,
 				3DF39C31192B5D7500593B14 /* Foundation.framework */,
 				3DF39C33192B5D7500593B14 /* CoreGraphics.framework */,
 				3DF39C35192B5D7500593B14 /* UIKit.framework */,
@@ -322,11 +386,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DD5D33C192E0FD00080CFE9 /* 1.m4r in Resources */,
 				3DD5D31F192DEE890080CFE9 /* locationDefault.png in Resources */,
 				3DF39C3C192B5D7600593B14 /* InfoPlist.strings in Resources */,
+				3DD5D38F192EF9130080CFE9 /* luck.m4r in Resources */,
+				3DD5D38E192EF9130080CFE9 /* duola.m4r in Resources */,
+				3DD5D391192EF9130080CFE9 /* opening.m4r in Resources */,
+				3DD5D390192EF9130080CFE9 /* nohappiness.m4r in Resources */,
 				3DF39C44192B5D7600593B14 /* Images.xcassets in Resources */,
 				3DD5D2EE192D9AB50080CFE9 /* Main.storyboard in Resources */,
+				3DD5D392192EF9130080CFE9 /* seaside.m4r in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,13 +413,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD5D3AD192F3B260080CFE9 /* YYContactListTableViewController.m in Sources */,
 				3DD5D2FA192D9E8F0080CFE9 /* YYCallListTableViewController.m in Sources */,
+				3DD5D3A1192F2D370080CFE9 /* VSViewController.m in Sources */,
 				3DF39C42192B5D7600593B14 /* AppDelegate.m in Sources */,
 				3DF39C3E192B5D7600593B14 /* main.m in Sources */,
 				3DCA1C28192C502400A9382B /* YYCall.m in Sources */,
+				3DD5D3A0192F2D370080CFE9 /* VSNavigationController.m in Sources */,
+				3DD5D3A2192F2D370080CFE9 /* VSViewControllerHolder.m in Sources */,
 				3DCA1C29192C502400A9382B /* YYCallSource.m in Sources */,
+				3DD5D3B0192F506D0080CFE9 /* YYRingListTableViewController.m in Sources */,
 				3DCA1C33192C557A00A9382B /* YYLocalNotification.m in Sources */,
 				3DCA1C30192C520500A9382B /* YYController.m in Sources */,
+				3DD5D3A6192F31810080CFE9 /* YYCallRepeatListTableViewController.m in Sources */,
+				3DD5D3A3192F2D370080CFE9 /* VSWindow.m in Sources */,
 				3DD5D308192DADDA0080CFE9 /* YYCallDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

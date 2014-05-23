@@ -22,8 +22,8 @@
         NSTimeInterval time = [[NSDate date] timeIntervalSince1970];
         self.callId = (NSInteger)time;
         self.callName = @"老妈";
-        self.callSound = @"hoyou.mp3";
-        self.ringSound = @"seaside.wav";
+        self.callSound = @"hoyou";
+        self.ringSound = @"seaside";
         self.isOpen = YES;
     }
     return self;

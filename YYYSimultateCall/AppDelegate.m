@@ -7,12 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
     return YES;
 }
 
@@ -45,6 +43,6 @@
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
-    
+    [[UIApplication sharedApplication] cancelLocalNotification:notification];
 }
 @end
