@@ -148,7 +148,19 @@
 }
 
 
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"detailCall"]) //"goView2"是SEGUE连线的标识
+    {
+        id viewController = segue.destinationViewController;
+        if ([sender isKindOfClass:[YYCall class]]) {
+            [viewController setValue:@"edit" forKey:@"type"];
+            [viewController setValue:sender  forKey:@"call"];
+        }else{
+            [viewController setValue:@"add" forKey:@"type"];
+        }
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.

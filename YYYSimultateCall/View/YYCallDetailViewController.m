@@ -9,6 +9,7 @@
 #import "YYCallDetailViewController.h"
 #import "YYCall.h"
 #import "YYController.h"
+#import "VSViewControllerHolder.h"
 #import <AddressBook/AddressBook.h>
 @interface YYCallDetailViewController ()<UITableViewDelegate,UITableViewDataSource,UIPickerViewDataSource,UIPickerViewDelegate>
 {
@@ -18,6 +19,9 @@
 @property (nonatomic,strong)IBOutlet UIPickerView *pickView;
 @property (nonatomic,strong)IBOutlet UITableView *tableView;
 @property (nonatomic,strong)YYCall *call;
+
+// add, edit
+@property (nonatomic,strong)NSString *type;
 
 - (IBAction)saveCall:(id)sender;
 - (IBAction)back:(id)sender;
@@ -33,6 +37,7 @@
         _hourList = @[@"0小时",@"1小时",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24"];
         _minuteList = @[ @"1分钟",@"2分钟",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24",@"25",@"26",@"27",@"28",@"29",@"30",@"31",@"32",@"33",@"34",@"35",@"36",@"37",@"38",@"39",@"40",@"41",@"42",@"43",@"44",@"45",@"46",@"47",@"48",@"49",@"50",@"51",@"52",@"53",@"54",@"55",@"56",@"57",@"58",@"59"];
         self.call = [[YYCall alloc]init];
+
     }
     return self;
 }
@@ -101,12 +106,18 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
+    if ([_type isEqualToString:@"edit"]) {
+        return 2;
+    }
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
+    if (section==1) {
+        return 1;
+    }
     return 4;
 }
 
@@ -114,30 +125,53 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    int index = indexPath.row;
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"addCell%d",index]];
     
-    switch (index) {
-        case 0:
-            cell.detailTextLabel.text = _call.repeatText;
-            break;
-        case 1:
-            cell.detailTextLabel.text = _call.callName;
-            break;
-        case 2:
-            cell.detailTextLabel.text = _call.callSound;
-            break;
-        case 3:
-            cell.detailTextLabel.text = _call.ringSound;
-            break;
-        default:
-            break;
+    int index = indexPath.row;
+    UITableViewCell *cell ;
+    if (indexPath.section == 0) {
+        cell = [tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"addCell%d",index]];
+        
+        switch (index) {
+            case 0:
+                cell.detailTextLabel.text = _call.repeatText;
+                break;
+            case 1:
+                cell.detailTextLabel.text = _call.callName;
+                break;
+            case 2:
+                cell.detailTextLabel.text = _call.callSound;
+                break;
+            case 3:
+                cell.detailTextLabel.text = _call.ringSound;
+                break;
+            default:
+                break;
+        }
+    }else{
+        static NSString *reuseIdetify = @"taleViewCell";
+        cell = [tableView dequeueReusableCellWithIdentifier:reuseIdetify];
+        if (!cell) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdetify];
+
+            cell.textLabel.text = @"Delete";
+            cell.textLabel.font = [UIFont boldSystemFontOfSize:18];
+            cell.textLabel.textColor = [UIColor redColor];
+            cell.textLabel.textAlignment = 1;
+        }
     }
+
     return cell;
 }
 
 
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 1 && indexPath.row == 0) {
+        [[YYController shareInstance] deleteCall:_call];
+        [[VSViewControllerHolder shareInstance] goBackanimated:YES];
+    }
+}
 
 //获取通讯录
 
