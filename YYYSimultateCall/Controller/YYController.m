@@ -45,7 +45,7 @@ static YYController *instance = nil;
 {
     [[YYCallSource shareInstance] deleteCall:call];
     [[YYLocalNotification localNotificationWithCall:call] stop];
-    [self notificationChage];
+   // [self notificationChage];
 
 }
 
@@ -69,7 +69,7 @@ static YYController *instance = nil;
     YYLocalNotification *notif = [[YYLocalNotification alloc]initWithCall:originCall];
     [notif update:call];
     [notif start];
-    [self notificationChage];
+  //  [self notificationChage];
 
 }
 

@@ -12,6 +12,7 @@
 		3D825D891932ED4E00BE5BDF /* YYWaitCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D825D881932ED4E00BE5BDF /* YYWaitCallViewController.m */; };
 		3D825D8C1932ED5D00BE5BDF /* YYReplayCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D825D8B1932ED5D00BE5BDF /* YYReplayCallViewController.m */; };
 		3D8395841932EFA9009220B2 /* share_icon_g@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8395831932EFA9009220B2 /* share_icon_g@2x.png */; };
+		3D8395D519335624009220B2 /* YYSoundListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8395D419335624009220B2 /* YYSoundListTableViewController.m */; };
 		3DCA1C28192C502400A9382B /* YYCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA1C25192C502400A9382B /* YYCall.m */; };
 		3DCA1C29192C502400A9382B /* YYCallSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA1C27192C502400A9382B /* YYCallSource.m */; };
 		3DCA1C30192C520500A9382B /* YYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA1C2F192C520500A9382B /* YYController.m */; };
@@ -66,6 +67,8 @@
 		3D825D8A1932ED5D00BE5BDF /* YYReplayCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYReplayCallViewController.h; sourceTree = "<group>"; };
 		3D825D8B1932ED5D00BE5BDF /* YYReplayCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYReplayCallViewController.m; sourceTree = "<group>"; };
 		3D8395831932EFA9009220B2 /* share_icon_g@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_icon_g@2x.png"; sourceTree = "<group>"; };
+		3D8395D319335624009220B2 /* YYSoundListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSoundListTableViewController.h; sourceTree = "<group>"; };
+		3D8395D419335624009220B2 /* YYSoundListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSoundListTableViewController.m; sourceTree = "<group>"; };
 		3DCA1C24192C502400A9382B /* YYCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCall.h; sourceTree = "<group>"; };
 		3DCA1C25192C502400A9382B /* YYCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCall.m; sourceTree = "<group>"; };
 		3DCA1C26192C502400A9382B /* YYCallSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCallSource.h; sourceTree = "<group>"; };
@@ -191,6 +194,8 @@
 				3D825D881932ED4E00BE5BDF /* YYWaitCallViewController.m */,
 				3D825D8A1932ED5D00BE5BDF /* YYReplayCallViewController.h */,
 				3D825D8B1932ED5D00BE5BDF /* YYReplayCallViewController.m */,
+				3D8395D319335624009220B2 /* YYSoundListTableViewController.h */,
+				3D8395D419335624009220B2 /* YYSoundListTableViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -439,6 +444,7 @@
 				3D825D8C1932ED5D00BE5BDF /* YYReplayCallViewController.m in Sources */,
 				3DD5D2FA192D9E8F0080CFE9 /* YYCallListTableViewController.m in Sources */,
 				3DD5D3A1192F2D370080CFE9 /* VSViewController.m in Sources */,
+				3D8395D519335624009220B2 /* YYSoundListTableViewController.m in Sources */,
 				3DF39C42192B5D7600593B14 /* AppDelegate.m in Sources */,
 				3DF39C3E192B5D7600593B14 /* main.m in Sources */,
 				3DCA1C28192C502400A9382B /* YYCall.m in Sources */,

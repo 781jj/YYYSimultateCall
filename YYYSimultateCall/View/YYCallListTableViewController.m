@@ -55,21 +55,15 @@
 
 - (void)listChange:(id)notif
 {
-    
     [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    // Return the number of sections.
-    return 1;
-}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return the number of rows in the section.
     return [[[YYCallSource shareInstance] list] count];
 }
 
@@ -109,6 +103,8 @@
     
     UISwitch *isOpenSwitch = (UISwitch *)[cell viewWithTag:15];
     [isOpenSwitch setOn:call.isOpen];
+    [isOpenSwitch addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
+
 
     return cell;
 }
@@ -127,10 +123,18 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSInteger index = indexPath.row;
 
-  //[self.dataArray removeObjectAtIndex:indexPath.row];
- 
-   // [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSArray *list = [[YYCallSource shareInstance] list];
+        if (index >= [list count]) {
+            return ;
+        }
+        YYCall *call =  (YYCall *)[list objectAtIndex:index];
+        [[YYController shareInstance] deleteCall:call];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
+
   
 }
 
@@ -161,6 +165,28 @@
         }
     }
 }
+
+#pragma mark switch
+- (void)switchAction:(UISwitch *)view
+{
+    UITableViewCell *cell = (UITableViewCell *)[view superview];
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    NSArray *list = [[YYCallSource shareInstance] list];
+    NSInteger index = indexPath.row;
+    if (index >= [list count]) {
+        return;
+    }
+    YYCall *call =  (YYCall *)[list objectAtIndex:index];
+    if (view.isOn) {
+        call.isOpen  = YES;
+        [[YYController shareInstance] editCall:call];
+    }else{
+        call.isOpen = NO;
+        [[YYController shareInstance] editCall:call];
+
+    }
+}
+
 
 /*
 // Override to support conditional editing of the table view.
