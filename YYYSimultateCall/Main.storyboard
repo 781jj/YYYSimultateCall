@@ -98,6 +98,68 @@
             </objects>
             <point key="canvasLocation" x="265" y="90"/>
         </scene>
+        <!--Wait Call View Controller-->
+        <scene sceneID="uqQ-nT-8zh">
+            <objects>
+                <viewController storyboardIdentifier="callScene" id="FtR-x9-GWI" customClass="YYWaitCallViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TkQ-5O-44t"/>
+                        <viewControllerLayoutGuide type="bottom" id="c1I-cs-5Fc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2pt-ck-M1g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfZ-bW-YIc">
+                                <rect key="frame" x="216" y="434" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="share_icon_g.png"/>
+                                <connections>
+                                    <segue destination="9JQ-6I-79y" kind="push" id="Sms-7v-1bZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa4-cz-1OO">
+                                <rect key="frame" x="30" y="434" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="share_icon_g.png"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="call.png" translatesAutoresizingMaskIntoConstraints="NO" id="axv-Yc-zY2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WIO-a1-J1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="813"/>
+        </scene>
+        <!--Replay Call View Controller-->
+        <scene sceneID="rKq-yv-uIp">
+            <objects>
+                <viewController storyboardIdentifier="replayScene" id="9JQ-6I-79y" customClass="YYReplayCallViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iez-sN-s9f"/>
+                        <viewControllerLayoutGuide type="bottom" id="b0o-ue-qxV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KPQ-bB-V1O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="replay.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tvk-MM-gQp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SdI-dO-X3N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TFT-lY-Ro5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="680" y="807"/>
+        </scene>
         <!--Call Detail View Controller - Add-->
         <scene sceneID="FEn-gx-dGE">
             <objects>
@@ -424,6 +486,11 @@
             <point key="canvasLocation" x="1565" y="445"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="call.png" width="320" height="568"/>
+        <image name="replay.png" width="320" height="568"/>
+        <image name="share_icon_g.png" width="60" height="60"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

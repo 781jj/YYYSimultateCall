@@ -76,7 +76,17 @@ static YYController *instance = nil;
 - (void)notificationChage
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:YYCallListChange object:nil];
+}
 
+- (void)goToWaitPage
+{
+    UIViewController *viewcontroller = [[VSViewControllerHolder shareInstance] getCurrentViewController];
+    [viewcontroller presentViewController:[viewcontroller.storyboard instantiateViewControllerWithIdentifier:@"callScene"] animated:NO completion:nil];
+}
 
+- (void)goToReplayPage
+{
+    UIViewController *viewcontroller = [[VSViewControllerHolder shareInstance] getCurrentViewController];
+    [viewcontroller presentViewController:[viewcontroller.storyboard instantiateViewControllerWithIdentifier:@"replayScene"] animated:NO completion:nil];
 }
 @end

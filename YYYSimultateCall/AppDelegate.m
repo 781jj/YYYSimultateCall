@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "YYController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -44,5 +45,6 @@
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
     [[UIApplication sharedApplication] cancelLocalNotification:notification];
+    [[YYController shareInstance] goToWaitPage];
 }
 @end

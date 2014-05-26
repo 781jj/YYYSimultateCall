@@ -45,7 +45,7 @@
 - (UILocalNotification *)creatLocationNotification:(YYCall *)call interval:(int)interval
 {
     UILocalNotification *localNotification = [[UILocalNotification alloc] init];
-    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:10];
+    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:call.timestamp+interval];
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
     localNotification.repeatInterval = 0;
     localNotification.soundName = [NSString stringWithFormat:@"%@.m4r",call.ringSound];
@@ -55,9 +55,6 @@
     localNotification.alertLaunchImage = @"locationDefault.png";
     localNotification.userInfo = @{@"id": [NSString stringWithFormat:@"%ld",call.callId]};
     localNotification.applicationIconBadgeNumber = 1;
-
-    
-   
     return localNotification;
 }
 

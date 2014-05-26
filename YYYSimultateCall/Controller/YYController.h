@@ -18,5 +18,7 @@
 - (void)openCall:(YYCall *)call;
 - (void)closeCall:(YYCall *)call;
 - (void)editCall:(YYCall *)call;
+- (void)goToWaitPage;
+- (void)goToReplayPage;
 
 @end
